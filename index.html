@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ed04236f11.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- nav-bar -->
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <i class="fa-brands fa-instagram mr-1"></i>
+            <span>Instagram</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <button type="button" class="btn btn-success mr-2" data-toggle="modal"
+                                data-target="#exampleModal">Create a new post
+                        </button>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Accesibility</a>
+                        <a class="dropdown-item" href="#">Privacy and Data</a>
+                        <a class="dropdown-item text-danger" href="#">Log out</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Create a new Post</h5>
+            </div>
+            <div class="modal-body">
+                <h6>Caption:</h6>
+                <input class="col-12" type="text" placeholder="Add the caption of your post here.">
+                <button type="button" class="btn btn-outline-dark mt-2"><i class="fa-solid fa-camera-retro"></i></button>
+                <button type="button" class="btn btn-outline-dark mt-2"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-success ">Publish</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Modal -->
+
+  <!-- nav-bar -->
+  <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab " role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-square"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-table-cells"></i></button>
+    </li>
+    </ul>
+    <!-- cascade -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active d-flex  flex-column align-items-center" id="pills-home"  role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+            <div class="card mb-4" style="width: 50%;">
+              <div class="header d-flex justify-content-between">
+                <h5 class="card-title">Montañas Heladas</h5>
+                <p class="date ml-auto"><strong>08/26</strong></p>
+              </div>
+              <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="likes"><strong>368 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+        
+            <div class="card mb-4" style="width: 50%;">
+              <div class="header d-flex justify-content-between">
+                <h5 class="card-title">Samurai</h5>
+                <p class="date"><strong>04/09</strong></p>
+              </div>
+              <img src="https://t3.ftcdn.net/jpg/05/66/27/56/360_F_566275602_ewJ3sgEV27DQhETyuen8JHrVFM90rBhm.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="likes"><strong>204 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mb-4" style="width: 50%;">
+              <div class="header d-flex justify-content-between">
+                <h5 class="card-title">Excavadora Cat</h5>
+                <p class="date"><strong>12/12</strong></p>
+              </div>
+              <img src="https://www.rbauction.es/cms_assets/category_images/21372694941/21372694941_W_S.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="likes"><strong>125 Likes Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mb-4" style="width: 50%;">
+              <div class="header d-flex justify-content-between">
+                <h5 class="card-title">Escavadora Hitachi</h5>
+                <p class="date"><strong>04/09</strong></p>
+              </div>
+              <img src="https://maquinariaparavias.com/wp-content/uploads/2022/02/Excavadora-Hitachi-ZX140-2021-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="likes"><strong>204 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mb-4" style="width: 50%;">
+              <div class="header d-flex justify-content-between">
+                <h5 class="card-title">Paw Patrol</h5>
+                <p class="date"><strong>04/09</strong></p>
+              </div>
+              <img src="https://i.ytimg.com/vi/hx-Z9dPBUBo/maxresdefault.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="likes"><strong>204 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="card mb-4" style="width: 50%;">
+              <div class="header d-flex justify-content-between">
+                <h5 class="card-title">Gatito</h5>
+                <p class="date"><strong>04/09</strong></p>
+              </div>
+              <img src=https://images.hola.com/imagenes/mascotas/20180925130054/consejos-para-cuidar-a-un-gatito-recien-nacido-cs/0-601-526/cuidardgatito-t.jpg?tx=w_680 class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="likes"><strong>204 Likes</strong></p>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- cascade -->
+      <!-- collage -->
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="row ">
+          <div class="col-md-4 d-flex">
+            <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D" class="img-thumbnail img-fluid">
+          </div>
+          <div class="col-md-4 d-flex">
+            <img src="https://t3.ftcdn.net/jpg/05/66/27/56/360_F_566275602_ewJ3sgEV27DQhETyuen8JHrVFM90rBhm.jpg" class="img-thumbnail img-fluid">
+          </div>
+          <div class="col-md-4 d-flex">
+            <img src="https://www.rbauction.es/cms_assets/category_images/21372694941/21372694941_W_S.jpg" class="img-thumbnail img-fluid">
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-4 d-flex">
+            <img src="https://maquinariaparavias.com/wp-content/uploads/2022/02/Excavadora-Hitachi-ZX140-2021-3.jpg" class="img-thumbnail img-fluid">
+          </div>
+          <div class="col-md-4 d-flex">
+            <img src="https://i.ytimg.com/vi/hx-Z9dPBUBo/maxresdefault.jpg" class="img-thumbnail img-fluid">
+          </div>
+          <div class="col-md-4 d-flex">
+            <img src="https://images.hola.com/imagenes/mascotas/20180925130054/consejos-para-cuidar-a-un-gatito-recien-nacido-cs/0-601-526/cuidardgatito-t.jpg?tx=w_680" class="img-thumbnail img-fluid">
+          </div>
+        </div>
+      </div>
+      <!-- collage -->
+  <!-- nav-bar -->
+
+
+  <!-- No consigo hacerlo responsibe 100% ni con img-fluid ni de otra forma. -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</body>
+</html>
